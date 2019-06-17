@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: vault
+  cloud:
+    vault:
+      token: s.t1nBB0CqOEy2x4Ebws8jeB8h
+      scheme: http
+      kv.enabled: true
