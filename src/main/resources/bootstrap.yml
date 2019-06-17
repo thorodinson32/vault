@@ -3,6 +3,6 @@ spring:
     name: vault
   cloud:
     vault:
-      token: s.t1nBB0CqOEy2x4Ebws8jeB8h
+      token: ${root_token}
       scheme: http
       kv.enabled: true

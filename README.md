@@ -1,4 +1,4 @@
-#Vault with Docker and Spring Boot
+# Vault with Docker and Spring Boot
 
 1. **Install vault**
 2. **Create Vault container:**  
@@ -11,13 +11,13 @@
 3. **Initialize vault:**  
 	*vault operator init*
 4. **Save the keys generated from init**  
-5. **Create environment Variables**
-      *export VAULT_ADDR="http://localhost:8200"*
-	  *export VAULT_TOKEN="{{root key}}"*  
-6. **Enable KV secrets:**
-	  *vault secrets enable -path=secret/ kv*
-7. **Unseal the vault by running this command with 3 keys:**
-	  *vault operator unseal {{key}}*
-8. **Insert a secret:**
-	   *vault kv put secret/{{appname}}/{{profile}} password=test*
+5. **Create environment Variables**  
+      *export VAULT_ADDR="http://localhost:8200"*  
+      *export VAULT_TOKEN="{{root key}}"*
+6. **Enable KV secrets:**  
+*vault secrets enable -path=secret/ kv*
+7. **Unseal the vault by running this command with 3 keys:**  
+*vault operator unseal {{key}}*
+8. **Insert a secret:**  
+*vault kv put secret/{{appname}}/{{profile}} password=test*
 
